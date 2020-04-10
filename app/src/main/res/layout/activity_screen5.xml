@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/coronavirus"
+    tools:context=".Screen5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/txtTimer"
+        android:layout_marginLeft="230dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtName5"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Do you experience shortness of breath?"/>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/txtName5"
+            android:id="@+id/rg5"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb51"
+                android:text="Yes"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb52"
+                android:text="No"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/txtBreathing"
+            android:text="Place the device on your abdomen and breathe for a minute till the buzzer rings."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/rg5"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Breathing Rate"
+            android:id="@+id/edtBreathing"
+            android:layout_below="@+id/txtBreathing"/>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTimer"
+            android:layout_below="@+id/edtBreathing"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/custom_button"
+            android:layout_centerHorizontal="true"
+            android:text="Start Timer"/>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNext5"
+            android:layout_below="@+id/btnTimer"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="Next"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

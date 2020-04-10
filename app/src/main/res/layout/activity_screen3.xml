@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/coronavirus"
+    tools:context=".Screen3">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtName3"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Put your finger over the fingerprint scanner provided in the system till the buzzer rings.\n(After buzzer rings)"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtTemperature"
+            android:layout_below="@+id/txtName3"
+            android:layout_marginTop="30dp"
+            android:hint="Temperature         "/>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNext3"
+            android:background="@drawable/custom_button"
+            android:layout_below="@+id/edtTemperature"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:text="Next"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
